@@ -1,14 +1,7 @@
 import React from "react"
 
 export default function Meme() {
-    /**
-     * Challenge: 
-     * Try to figure out why our code is broken! 😞
-     * 
-     * Hint: it has to do with the difference between
-     * what we were importing before from memesData.js
-     * and what we're setting our state as with `allMemes`
-     */
+
     
     const [meme, setMeme] = React.useState({
         topText: "",
@@ -69,7 +62,7 @@ export default function Meme() {
                 </button>
             </div>
             <div className="meme">
-                <img src={meme.randomImage} className="meme--image" />
+                <img src={meme.randomImage} className="meme--image" alt="generated meme"/>
                 <h2 className="meme--text top">{meme.topText}</h2>
                 <h2 className="meme--text bottom">{meme.bottomText}</h2>
             </div>
